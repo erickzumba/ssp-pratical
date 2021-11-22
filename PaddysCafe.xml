@@ -1,17 +1,19 @@
+es (73 sloc)  1.82 KB
+   
 <?xml version = "1.0" encoding = "UTF-8" ?>
 <menu>
     <section name="Drinks">
         <entry>
-            <item>Coca cola</item>
+            <item>Coke</item>
             <price>2.50</price>
         </entry>
         <entry>
             <item>Vodka</item>
-            <price>15.00</price>
+            <price>15</price>
         </entry>
         <entry vegetarian="true">
             <item>Kombucha</item>
-            <price>2.00</price>
+            <price>2.0</price>
         </entry>
     </section>
     <section name="Side Dishes">
@@ -25,7 +27,7 @@
         </entry>
         <entry vegetarian="true">
             <item>Rice</item>
-            <price>4.00</price>
+            <price>4.0</price>
         </entry>
     </section>
     <section name="Breakfast">
@@ -35,11 +37,11 @@
         </entry>
         <entry>
             <item>Pouched Eggs</item>
-            <price>8.00</price>
+            <price>8</price>
         </entry>
         <entry vegetarian="true">
             <item>French Toast</item>
-            <price>10.00</price>
+            <price>10</price>
         </entry>
     </section>
     <section name="Lunch">
@@ -53,7 +55,7 @@
         </entry>
         <entry vegetarian="true">
             <item>Falafel</item>
-            <price>10.00</price>
+            <price>10</price>
         </entry>
     </section>
     <section name="Dinner">
@@ -67,7 +69,7 @@
         </entry>
         <entry vegetarian="true">
             <item>Shakshuka</item>
-            <price>15.00</price>
+            <price>15</price>
         </entry>
     </section>
 </menu>

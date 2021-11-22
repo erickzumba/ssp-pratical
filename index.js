@@ -1,28 +1,39 @@
-const http = require('http'),
-      path = require('path'),
-      express = require('express'),
-      fs = require('fs'),
-      xmlParse = require('xslt-processor').xmlParse,
-      xsltProcess = require('xslt-processor').xmlProcess,
-      xml2js = require('xml2js');
-const router = express();
-const server = http.createServer(router);   
+const   http = require('http'), //This module provides the HTTP server functionalities
+        path = require('path'), //The path module provides utilities for working with file and directory paths
+        express = require('express'), //This module allows this app to respond to HTTP requests, defines the routing and renders back the required content
+        fs = require('fs'), //This module allows to work with the file system: read and write files back
+        xmlParse = require('xslt-processor').xmlParse, //This module allows to work with XML files
+        xsltProcess = require('xslt-processor').xsltProcess, //The same module allows us to uitlise XSL Transformations
+        xml2js = require('xml2js'); //This module does XML <-> JSON conversion
 
-router.get('/',function(req,res){
+const   router = express(), 
+        server = http.createServer(router);
 
-    res.writeHead(200,{'Content-Type':'text/html'});
-    let xml = fs.readFileSync('PaddysCafe.xml','utf8'),
-        xsl = fs.readFileSync('PaddysCafe.xsl','utf8');
+router.use(express.static(path.resolve(__dirname,'views'))); //We serve static content from "views" folder
+
+router.get('/', function(req, res) {
+
+    res.writeHead(200, {'Content-Type' : 'text/html'});
+
+    let xml = fs.readFileSync('PaddysCafe.xml', 'utf8'),
+        xsl = fs.readFileSync('PaddysCafe.xsl', 'utf8');
+
+    console.log(xml);
+    console.log(xsl);
 
     let doc = xmlParse(xml),
-        stylesheets = xmlParse(xsl);
-        
-    let result = xsltProcess(doc,stylesheets);
-    
+        stylesheet = xmlParse(xsl);
+
+    console.log(doc);
+    console.log(stylesheet);
+
+    let result = xsltProcess(doc, stylesheet);
+
+    console.log(result);
+
     res.end(result.toString());
 
 });
-
 
 server.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function() {
     const addr = server.address();

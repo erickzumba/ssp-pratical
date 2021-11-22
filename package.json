@@ -1,21 +1,21 @@
 {
   "name": "ssp-proj",
   "version": "0.0.1",
-  "description": "pratical class work",
+  "description": "practical class work",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/erickzumba/ssp-pratical.git"
+    "url": "git+https://github.com/erickzumba/ssp-practical.git"
   },
   "author": "Erick Zumba",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/erickzumba/ssp-pratical/issues"
+    "url": "https://github.com/erickzumba/ssp-practical/issues"
   },
-  "homepage": "https://github.com/erickzumba/ssp-pratical#readme",
+  "homepage": "https://github.com/erickzumba/ssp-practical#readme",
   "dependencies": {
     "express": "^4.17.1",
     "fs": "^0.0.1-security",
