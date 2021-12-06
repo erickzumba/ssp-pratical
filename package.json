@@ -1,4 +1,4 @@
-{
+{{
   "name": "ssp-proj",
   "version": "0.0.1",
   "description": "practical class work",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/erickzumba/ssp-pratical"
+    "url": "git+https://github.com/mikhail-cct/ssp-practical.git"
   },
-  "author": "Erick Zumba",
+  "author": "Mikhail",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/erickzumba/ssp-pratical"
+    "url": "https://github.com/mikhail-cct/ssp-practical/issues"
   },
-  "homepage": "https://github.com/erickzumba/ssp-pratical/blob/main/README.md",
+  "homepage": "https://github.com/mikhail-cct/ssp-practical#readme",
   "dependencies": {
     "express": "^4.17.1",
     "fs": "^0.0.1-security",
