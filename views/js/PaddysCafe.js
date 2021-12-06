@@ -1,4 +1,4 @@
-ar gEntreeCount = 0;
+var gEntreeCount = 0;
 // returns a number that represents the sum of all the selected menu
 // item prices.
 function calculateBill(idMenuTable) {
