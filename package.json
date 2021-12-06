@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mikhail-cct/ssp-practical.git"
+    "url": "git+https://github.com/erickzumba/ssp-pratical.git"
   },
   "author": "Mikhail",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mikhail-cct/ssp-practical/issues"
+    "url": "https://github.com/erickzumba/ssp-pratical/issues"
   },
-  "homepage": "https://github.com/mikhail-cct/ssp-practical#readme",
+  "homepage": "https://github.com/erickzumba/ssp-pratical#readme",
   "dependencies": {
     "express": "^4.17.1",
     "fs": "^0.0.1-security",
